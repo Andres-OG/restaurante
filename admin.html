@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1" >Administrador de piso</h1>
+    </header>
+    <main class="cont-main">
+        <div class="navbar">
+            <div class="block-articulo" draggable="true" id="art" ondragstart="drag(event)">
+                <h3 class="h3">Nombre del articulo</h3>
+                <img id="img-articulo" src="img/mesa2.png" alt="imagen del articulo" class="img-articulo">
+            </div>
+            <div class="block-articulo" draggable="true" id="art" ondragstart="drag(event)">
+                <h3 class="h3">Nombre del articulo</h3>
+                <img id="img-articulo" src="img/Sin_título.png" alt="imagen del articulo" class="img-articulo">
+            </div>
+        </div>
+
+        <div class="cont-principal">
+            <nav class="navPiso">
+                <div>
+                    <h2 class="h2" id="floorValue">Ningun piso seleccionado</h2>
+                    <p class="p">Arrastre los elemento que desea colocar aqui: </p>
+                </div>
+                <ul class="ul">
+                    <li>
+                        <select class="for-select" id="floors" name="floors">
+                            <option class="option" value="">Seleccione un piso</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="" id="crear_piso">Crear nuevo piso</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="dropzone" id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
